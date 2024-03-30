@@ -1,0 +1,20 @@
+#item1{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-padding: 4 30 4 4;
+    -fx-border-radius: 5px;
+}
+#item1:hover{
+    -fx-background-color: #bbbbbb;
+    -fx-cursor: hand;
+}
+#item2{
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-padding: 4 10 4 4;
+    -fx-border-radius: 5px;
+}
+#item2:hover{
+    -fx-background-color: #bbbbbb;
+    -fx-cursor: hand;
+}
