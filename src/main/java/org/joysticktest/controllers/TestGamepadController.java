@@ -7,9 +7,18 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
+
 public class TestGamepadController {
     @FXML
     private Button BackMainMenu;
+    @FXML
+    private Button DPad_DOWN;
+    @FXML
+    private Button DPad_LEFT;
+    @FXML
+    private Button DPad_RIGHT;
+    @FXML
+    private Button DPad_UP;
     @FXML
     void MouseClickedBackMainMenu(MouseEvent event) {
         try {

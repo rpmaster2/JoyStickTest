@@ -1,12 +1,11 @@
 # JoyStickTest on Java
 
-## Описание
-Цель проекта: перенос JoyStickTest с C++ на Java, используя интерфейс на JavaFX
+## Description
+Project goal: port JoyStickTest from C++ to Java, using an interface on JavaFX
 
-## Установка
-1. Склонируйте репозиторий.
-2. Выполните необходимые действия для установки.
+## Installation
+1. Download the file JE.jar from the Releases item
+2. Run
 
-
-## Лицензия
-Этот проект лицензирован под MIT License.
+## License
+This project is licensed under the MIT License with mention of the project author.

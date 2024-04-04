@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JoyStickTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JoyStickTest_jar</output-path>
+    <root id="root" />
+  </artifact>
+</component>

@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="461.0" prefWidth="600.0" stylesheets="@../styles/buttontextgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestGamepadController">
+<AnchorPane prefHeight="461.0" prefWidth="600.0" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestGamepadController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -13,5 +13,9 @@
          </image>
       </ImageView>
       <Button fx:id="BackMainMenu" layoutX="488.0" layoutY="413.0" mnemonicParsing="false" onMouseClicked="#MouseClickedBackMainMenu" text="Back Menu" />
+      <Button fx:id="DPad_UP" layoutX="210.0" layoutY="139.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
+      <Button fx:id="DPad_DOWN" layoutX="210.0" layoutY="194.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
+      <Button fx:id="DPad_LEFT" layoutX="179.0" layoutY="164.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
+      <Button fx:id="DPad_RIGHT" layoutX="241.0" layoutY="164.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" stylesheets="@../styles/buttontestgamepad.css" visible="false" />
    </children>
 </AnchorPane>
