@@ -7,6 +7,7 @@
 #item1:hover{
     -fx-background-color: #bbbbbb;
     -fx-cursor: hand;
+    -fx-background-radius: 6px;
 }
 #item2{
     -fx-border-color: black;
@@ -17,4 +18,8 @@
 #item2:hover{
     -fx-background-color: #bbbbbb;
     -fx-cursor: hand;
+    -fx-background-radius: 6px;
+}
+.label{
+    -fx-text-fill: white;
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="331.0" prefWidth="503.0" style="-fx-background-color: #1b1b1e;" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestCPU">
+   <children>
+      <Label layoutX="147.0" layoutY="36.0" text="Press Test to CPU Speed">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbResult" layoutX="227.0" layoutY="68.0" text="0">
+         <font>
+            <Font name="Monotype Corsiva" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbResultText" alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="131.0" prefHeight="32.0" prefWidth="210.0">
+         <font>
+            <Font name="Monotype Corsiva" size="18.0" />
+         </font></Label>
+      <Button fx:id="btTest" layoutX="227.0" layoutY="166.0" mnemonicParsing="false" onMouseClicked="#btTestClicked" text="Test!" />
+      <Button fx:id="BackMainMenu" layoutX="402.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#MouseClickedBackMainMenu" text="Back Menu" />
+   </children>
+</AnchorPane>

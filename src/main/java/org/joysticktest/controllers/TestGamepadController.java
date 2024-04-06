@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
 
 
 public class TestGamepadController {
@@ -20,7 +19,7 @@ public class TestGamepadController {
     @FXML
     private Button DPad_UP;
     @FXML
-    void MouseClickedBackMainMenu(MouseEvent event) {
+    void MouseClickedBackMainMenu() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/joysticktest/views/mainview.fxml"));
             Parent Root = loader.load();

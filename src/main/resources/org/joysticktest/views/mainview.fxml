@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="202.0" prefWidth="480.0" stylesheets="@../styles/items.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.MainController">
+<AnchorPane prefHeight="202.0" prefWidth="480.0" style="-fx-background-color: #1b1b1e;" stylesheets="@../styles/items.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.MainController">
    <children>
    
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="14.0" prefHeight="32.0" prefWidth="413.0" text="Welcome to JoyStickTest ">
@@ -16,12 +16,12 @@
             <Insets />
          </opaqueInsets>
       </Label>
-      <Label fx:id="item1" layoutX="160.0" layoutY="101.0" onMouseClicked="#MouseClickeditem1" stylesheets="@../styles/items.css" text="1. Check Gamepad">
+      <Label fx:id="item1" layoutX="160.0" layoutY="101.0" onMouseClicked="#MouseClickeditem1" text="1. Check Gamepad">
          <font>
             <Font name="Monotype Corsiva" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="item2" layoutX="159.0" layoutY="152.0" text="2.  CPU performance">
+      <Label fx:id="item2" layoutX="159.0" layoutY="152.0" onMouseClicked="#MouseClickeditem2" text="2.  CPU performance">
          <font>
             <Font name="Monotype Corsiva" size="24.0" />
          </font>
