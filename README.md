@@ -1,4 +1,7 @@
-![g](https://github.com/rpmaster2/JoyStickTest/assets/76736848/db7763a0-fb5a-474b-86c8-9c6e6f562f4b)
+
+![g](https://github.com/rpmaster2/JoyStickTest/assets/76736848/61158acc-b70e-4fce-acda-168aefc2a59f)
+
+
 # JoyStickTest on Java
 
 ## Description
@@ -7,7 +10,7 @@ Project goal: port JoyStickTest from C++ to Java, using an interface on JavaFX
 
 ## Installation
 1. Download the file JE.jar from the Releases item
-2. Download JDK 20 to Official Site
+2. Download JDK 17 to Official Site
 3. Run JoyStickTest.jar 
 
 
