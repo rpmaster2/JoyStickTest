@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="461.0" prefWidth="600.0" style="-fx-background-color: #1b1b1e;" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestGamepadController">
+<AnchorPane prefHeight="461.0" prefWidth="600.0" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestGamepadController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -16,6 +18,15 @@
       <Button fx:id="DPad_UP" layoutX="210.0" layoutY="139.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
       <Button fx:id="DPad_DOWN" layoutX="210.0" layoutY="194.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
       <Button fx:id="DPad_LEFT" layoutX="179.0" layoutY="164.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
-      <Button fx:id="DPad_RIGHT" layoutX="241.0" layoutY="164.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" stylesheets="@../styles/buttontestgamepad.css" visible="false" />
+      <Button fx:id="DPad_RIGHT" layoutX="241.0" layoutY="164.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
+      <Label fx:id="gamepadstatus" layoutX="54.0" layoutY="413.0" prefHeight="33.0" prefWidth="251.0">
+         <font>
+            <Font name="Monotype Corsiva" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Y_Triangle" layoutX="448.0" layoutY="34.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="29.0" visible="false" />
+      <Button fx:id="A_X" layoutX="448.0" layoutY="116.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" visible="false" />
+      <Button fx:id="X_Square" layoutX="407.0" layoutY="75.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="29.0" visible="false" />
+      <Button fx:id="B_Circle" layoutX="490.0" layoutY="76.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="33.0" visible="false" />
    </children>
 </AnchorPane>

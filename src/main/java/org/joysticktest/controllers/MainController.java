@@ -1,10 +1,16 @@
 package org.joysticktest.controllers;
 
+import com.jthemedetecor.OsThemeDetector;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import org.joysticktest.theme.ThemeManager;
+
 
 public class MainController {
     @FXML
@@ -15,12 +21,18 @@ public class MainController {
     @FXML
     void MouseClickeditem1() {
         try {
+            item2 = null;
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/joysticktest/views/testgamepad.fxml"));
             Parent secondRoot = loader.load();
+            ThemeManager themeManager = new ThemeManager();
+            OsThemeDetector detector = OsThemeDetector.getDetector();
             Scene scene = item1.getScene();
             scene.setRoot(secondRoot);
+            themeManager.applyTheme(secondRoot, detector.isDark());
             scene.getWindow().setWidth(600);
             scene.getWindow().setHeight(500);
+            item1 = null;
+            System.gc();
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -29,12 +41,18 @@ public class MainController {
     @FXML
     void MouseClickeditem2() {
         try {
+            item1 = null;
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/joysticktest/views/testcpu.fxml"));
             Parent secondRoot = loader.load();
+            ThemeManager themeManager = new ThemeManager();
+            OsThemeDetector detector = OsThemeDetector.getDetector();
+            themeManager.applyTheme(secondRoot, detector.isDark());
             Scene scene = item2.getScene();
             scene.setRoot(secondRoot);
             scene.getWindow().setWidth(520);
             scene.getWindow().setHeight(370);
+            item2 = null;
+            System.gc();
         }
         catch (Exception e) {
             e.printStackTrace();

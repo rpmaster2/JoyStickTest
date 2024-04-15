@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="331.0" prefWidth="503.0" style="-fx-background-color: #1b1b1e;" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestCPU">
+<AnchorPane prefHeight="331.0" prefWidth="503.0" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestCPU">
    <children>
       <Label layoutX="147.0" layoutY="36.0" text="Press Test to CPU Speed">
          <font>

@@ -22,6 +22,21 @@
     -fx-background-color: #1d49aa;
     -fx-cursor: hand;
 }
+.button{
+    -fx-background-color:white;
+}
+.button#A_X{
+    -fx-background-radius: 5em;
+}
+.button#X_Square{
+    -fx-background-radius: 5em;
+}
+.button#Y_Triangle{
+    -fx-background-radius: 5em;
+}
+.button#B_Circle{
+    -fx-background-radius: 5em;
+}
 .label{
     -fx-text-fill: white;
 }

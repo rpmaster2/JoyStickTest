@@ -1,11 +1,14 @@
 package org.joysticktest.controllers;
 
+import com.jthemedetecor.OsThemeDetector;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import org.joysticktest.theme.ThemeManager;
 
 import java.util.concurrent.TimeUnit;
 
@@ -76,14 +79,23 @@ public class TestCPU {
     @FXML
     void MouseClickedBackMainMenu() {
         try {
+            lbResult = null;
+            lbResultText = null;
+            btTest = null;
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/joysticktest/views/mainview.fxml"));
             Parent Root = loader.load();
+            ThemeManager themeManager = new ThemeManager();
+            OsThemeDetector detector = OsThemeDetector.getDetector();
+            themeManager.applyTheme(Root, detector.isDark());
 
             // Отобразите второй FXML в том же окне
             Scene scene = BackMainMenu.getScene();
             scene.setRoot(Root);
             scene.getWindow().setWidth(500);
             scene.getWindow().setHeight(250);
+
+            BackMainMenu = null;
+            System.gc();
         }
         catch (Exception e) {
             e.printStackTrace();
