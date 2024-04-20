@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3afad83-217b-4409-a82b-78d4ad3df6b6" name="Changes" comment="Implemented full validation for dualshock 4 and for xinput gamepads. Vibration works only on xinput.">
+    <list default="true" id="a3afad83-217b-4409-a82b-78d4ad3df6b6" name="Changes" comment="Fix xinput buttons">
+      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/joysticktest/controllers/TestGamepadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/joysticktest/controllers/TestGamepadController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/ideaproject/JoyStickTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,6 +68,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ideaproject\JoyStickTest" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn dependency:purge-local-repository" />
@@ -109,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713637883866</updated>
       <workItem from="1713637884926" duration="64000" />
-      <workItem from="1713637955172" duration="5619000" />
+      <workItem from="1713637955172" duration="7719000" />
     </task>
     <task id="LOCAL-00001" summary="Implemented full validation for dualshock 4 and for xinput gamepads. Vibration works only on xinput.">
       <option name="closed" value="true" />
@@ -119,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713642924213</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix xinput buttons">
+      <option name="closed" value="true" />
+      <created>1713643803623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713643803623</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented full validation for dualshock 4 and for xinput gamepads. Vibration works only on xinput." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented full validation for dualshock 4 and for xinput gamepads. Vibration works only on xinput." />
+    <MESSAGE value="Fix xinput buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix xinput buttons" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JoyStickTest$Main.ic" NAME="Main Coverage Results" MODIFIED="1713638726107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

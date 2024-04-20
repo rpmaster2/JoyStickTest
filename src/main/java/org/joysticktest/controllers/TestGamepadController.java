@@ -126,18 +126,13 @@ public class TestGamepadController {
             Back_Share = null;
             LeftPointer = null;
             RightPointer = null;
-            LeftValue = null;
-            RightValue = null;
             LeftStick = null;
             RightStick = null;
             gc = null;
             gc2 = null;
-            lastX = 0.0f;
-            lastY = 0.0f;
-            lastZ = 0.0f;
-            lastRZ = 0.0f;
             LeftMotor = null;
             RightMotor = null;
+
 
             // Загрузка новой сцены
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/joysticktest/views/mainview.fxml"));

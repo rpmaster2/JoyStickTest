@@ -7,11 +7,22 @@
 ## Description
 Project goal: port JoyStickTest from C++ to Java, using an interface on JavaFX
 
+## Requirements
+- JDK 17
+- Installed GTK libraries to work with OpenGL JavaFX (linux)
+- At least 512 MB of RAM
 
 ## Installation
 1. Download the file JE.jar from the Releases item
 2. Download JDK 17 to Official Site
-3. Run JoyStickTest.jar 
+3. Run JoyStickTest.jar
+
+## Advantages over the original
+- Determination of the application theme depending on the system theme
+- Support not only for xinput gamepads, but also for dualshock 4 (and in the future for ps3 gamepads)
+- A more clear and familiar interface in gamepad test
+-  test works exactly the same as in the original, but in a beautiful wrapper
+- Cross-platform application
 
 
 ## JE x64 OpenGL3.0_SSE4.2_cpp20 Build 1.0.5 
