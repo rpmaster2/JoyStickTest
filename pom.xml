@@ -99,6 +99,11 @@
       <artifactId>logback-classic</artifactId>
       <version>1.2.3</version>
     </dependency>
+    <dependency>
+      <groupId>com.github.RalleYTN</groupId>
+      <artifactId>XInput-Plugin-for-JInput</artifactId>
+      <version>1.2.1</version>
+    </dependency>
   </dependencies>
 
   <build>

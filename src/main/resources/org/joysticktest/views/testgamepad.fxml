@@ -1,32 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="461.0" prefWidth="600.0" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestGamepadController">
+<AnchorPane prefHeight="524.0" prefWidth="610.0" stylesheets="@../styles/buttontestgamepad.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joysticktest.controllers.TestGamepadController">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="25.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/gamepad.png" />
          </image>
       </ImageView>
-      <Button fx:id="BackMainMenu" layoutX="488.0" layoutY="413.0" mnemonicParsing="false" onMouseClicked="#MouseClickedBackMainMenu" text="Back Menu" />
-      <Button fx:id="DPad_UP" layoutX="210.0" layoutY="139.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
-      <Button fx:id="DPad_DOWN" layoutX="210.0" layoutY="194.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
-      <Button fx:id="DPad_LEFT" layoutX="179.0" layoutY="164.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
-      <Button fx:id="DPad_RIGHT" layoutX="241.0" layoutY="164.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
-      <Label fx:id="gamepadstatus" layoutX="54.0" layoutY="413.0" prefHeight="33.0" prefWidth="251.0">
+      <Button fx:id="BackMainMenu" layoutX="495.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#MouseClickedBackMainMenu" text="Back Menu" />
+      <Button fx:id="DPad_UP" layoutX="214.0" layoutY="172.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="21.0" visible="false" />
+      <Button fx:id="DPad_DOWN" layoutX="216.0" layoutY="229.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" visible="false" />
+      <Button fx:id="DPad_LEFT" layoutX="185.0" layoutY="199.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="21.0" visible="false" />
+      <Button fx:id="DPad_RIGHT" layoutX="248.0" layoutY="201.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="21.0" visible="false" />
+      <Label fx:id="gamepadstatus" layoutX="14.0" layoutY="461.0" prefHeight="33.0" prefWidth="251.0">
          <font>
             <Font name="Monotype Corsiva" size="18.0" />
          </font>
       </Label>
-      <Button fx:id="Y_Triangle" layoutX="448.0" layoutY="34.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="29.0" visible="false" />
-      <Button fx:id="A_X" layoutX="448.0" layoutY="116.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" visible="false" />
-      <Button fx:id="X_Square" layoutX="407.0" layoutY="75.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="29.0" visible="false" />
-      <Button fx:id="B_Circle" layoutX="490.0" layoutY="76.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="33.0" visible="false" />
+      <Button fx:id="Y_Triangle" layoutX="453.0" layoutY="69.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="29.0" visible="false" />
+      <Button fx:id="A_X" layoutX="455.0" layoutY="150.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" visible="false" />
+      <Button fx:id="X_Square" layoutX="413.0" layoutY="110.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="29.0" visible="false" />
+      <Button fx:id="B_Circle" layoutX="495.0" layoutY="112.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="33.0" visible="false" />
+      <Button fx:id="Back_Share" layoutX="239.0" layoutY="117.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" visible="false" />
+      <Button fx:id="Start_Option" layoutX="354.0" layoutY="116.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="27.0" visible="false" />
+      <Button fx:id="Xbox_PS" layoutX="280.0" layoutY="103.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="58.0" visible="false" />
+      <Button fx:id="LT_L1" layoutX="107.0" layoutY="53.0" minHeight="10.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="105.0" visible="false" />
+      <Button fx:id="RT_R1" layoutX="411.0" layoutY="52.0" minHeight="10.0" mnemonicParsing="false" prefHeight="12.0" prefWidth="90.0" visible="false" />
+      <Button fx:id="LT2_L2" layoutX="106.0" layoutY="37.0" minHeight="10.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="105.0" visible="false" />
+      <Button fx:id="RT2_R2" layoutX="413.0" layoutY="37.0" minHeight="10.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="86.0" visible="false" />
+      <Label fx:id="LeftPointer" layoutX="82.0" layoutY="35.0" text="--&gt;" visible="false" />
+      <Label fx:id="RightPointer" layoutX="501.0" layoutY="35.0" text="&lt;--" visible="false" />
+      <Label fx:id="LeftValue" layoutX="9.0" layoutY="35.0" prefHeight="17.0" prefWidth="68.0" text="0" visible="false" />
+      <Label fx:id="RightValue" layoutX="528.0" layoutY="35.0" prefHeight="17.0" prefWidth="68.0" text="0" visible="false" />
+      <Pane fx:id="LeftPane" layoutX="107.0" layoutY="77.0" prefHeight="85.0" prefWidth="85.0">
+         <children>
+            <Canvas fx:id="LeftStick" height="75.0" layoutX="5.0" layoutY="5.0" width="75.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="RightPane" layoutX="343.0" layoutY="169.0" prefHeight="85.0" prefWidth="85.0">
+         <children>
+            <Canvas fx:id="RightStick" height="75.0" layoutX="5.0" layoutY="5.0" width="75.0" />
+         </children>
+      </Pane>
+      <Button fx:id="LeftMotor" layoutX="281.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#MouseClickedLeftMotor" text="LeftMotor" />
+      <Button fx:id="RightMotor" layoutX="386.0" layoutY="461.0" mnemonicParsing="false" onMouseClicked="#MouseClickedRightMotor" text="RightMotor" />
+      <Label layoutX="327.0" layoutY="419.0" text="Vibration">
+         <font>
+            <Font name="Monotype Corsiva" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -8,9 +8,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.joysticktest.theme.ThemeManager;
-import org.slf4j.LoggerFactory;
-import ch.qos.logback.classic.Level;
-import ch.qos.logback.classic.Logger;
 
 import java.io.IOException;
 
@@ -33,8 +30,6 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        Logger logger = (Logger) LoggerFactory.getLogger("org.slf4j.impl.StaticLoggerBinder");
-        logger.setLevel(Level.ERROR);
         launch();
     }
 }

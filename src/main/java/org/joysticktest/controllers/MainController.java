@@ -1,14 +1,11 @@
 package org.joysticktest.controllers;
 
 import com.jthemedetecor.OsThemeDetector;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 import org.joysticktest.theme.ThemeManager;
 
 
@@ -29,8 +26,8 @@ public class MainController {
             Scene scene = item1.getScene();
             scene.setRoot(secondRoot);
             themeManager.applyTheme(secondRoot, detector.isDark());
-            scene.getWindow().setWidth(600);
-            scene.getWindow().setHeight(500);
+            scene.getWindow().setWidth(620);
+            scene.getWindow().setHeight(550);
             item1 = null;
             System.gc();
         }

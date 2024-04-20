@@ -22,6 +22,30 @@
     -fx-background-color: #1d49aa;
     -fx-cursor: hand;
 }
+.button#LeftMotor {
+    -fx-background-color: #4676D7;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+    -fx-padding: 4px 8px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0;
+}
+.button#LeftMotor:hover {
+    -fx-background-color: #1d49aa;
+    -fx-cursor: hand;
+}
+.button#RightMotor {
+    -fx-background-color: #4676D7;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+    -fx-padding: 4px 8px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0;
+}
+.button#RightMotor:hover {
+    -fx-background-color: #1d49aa;
+    -fx-cursor: hand;
+}
 .button{
     -fx-background-color:white;
 }
@@ -37,6 +61,40 @@
 .button#B_Circle{
     -fx-background-radius: 5em;
 }
-.label{
-    -fx-text-fill: white;
+.button#Back_Share{
+    -fx-background-radius: 5em;
+}
+.button#Start_Option{
+    -fx-background-radius: 5em;
+}
+.button#Xbox_PS{
+    -fx-background-radius: 5em;
+}
+.button#LT_L1{
+    -fx-background-radius: 20em 20em 0 0;
+    -fx-border-color: red;
+    -fx-border-radius: 20em 20em 0 0;
+}
+.button#LT2_L2{
+    -fx-background-radius: 20em 20em 0 0;
+    -fx-border-color: red;
+    -fx-border-radius: 20em 20em 0 0;
+}
+.button#RT_R1{
+    -fx-background-radius: 20em 20em 0 0;
+    -fx-border-color: red;
+    -fx-border-radius: 20em 20em 0 0;
+}
+.button#RT2_R2{
+    -fx-background-radius: 20em 20em 0 0;
+    -fx-border-color: red;
+    -fx-border-radius: 20em 20em 0 0;
+}
+#LeftPane{
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
+}
+#RightPane{
+    -fx-background-color: white;
+    -fx-background-radius: 5em;
 }
