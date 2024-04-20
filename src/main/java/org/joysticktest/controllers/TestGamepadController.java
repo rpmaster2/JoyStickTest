@@ -33,7 +33,7 @@ public class TestGamepadController {
     ControllerEnvironment env = new XInputEnvironmentPlugin();
     static {
         // Относительный путь к папке lib, предполагая, что она находится на том же уровне, что и JAR-файл
-        String pathToLib = "./lib";
+        String pathToLib = "lib";
         System.setProperty("net.java.games.input.librarypath", new File(pathToLib).getAbsolutePath());
         System.setProperty("jinput.loglevel", "OFF");
     }
@@ -292,7 +292,20 @@ public class TestGamepadController {
                     lastY = value; // Сохранение текущего значения оси Y
                     updateLeftStickPosition(); // Обновление позиции стика
                 }
-
+                if (comp.getIdentifier() == Component.Identifier.Button._4) {
+                    if (value == 1f) {
+                        LT_L1.setVisible(true);
+                    } else if (value == 0f) {
+                        LT_L1.setVisible(false);
+                    }
+                }
+                if (comp.getIdentifier() == Component.Identifier.Button._5 ) {
+                    if (value == 1f) {
+                        RT_R1.setVisible(true);
+                    } else if (value == 0f) {
+                        RT_R1.setVisible(false);
+                    }
+                }
             }
         };
         //System.out.println("Processing gamepad input");
@@ -363,20 +376,7 @@ public class TestGamepadController {
                         Y_Triangle.setVisible(false);
                     }
                 }
-                if (comp.getIdentifier() == Component.Identifier.Button._4) {
-                    if (value == 1f) {
-                        LT_L1.setVisible(true);
-                    } else if (value == 0f) {
-                        LT_L1.setVisible(false);
-                    }
-                }
-                if (comp.getIdentifier() == Component.Identifier.Button._5 ) {
-                    if (value == 1f) {
-                        RT_R1.setVisible(true);
-                    } else if (value == 0f) {
-                        RT_R1.setVisible(false);
-                    }
-                }
+
                 if (comp.getIdentifier() == Component.Identifier.Axis.RX) {
                     if (value > -1f) {
                         LeftValue.setText(String.valueOf(value));
@@ -477,6 +477,20 @@ public class TestGamepadController {
                 } else if (comp.getIdentifier() == Component.Identifier.Axis.RY) {
                     lastRZ = value;
                     updateRightStickPositionDualshock();
+                }
+                if (comp.getIdentifier() == Component.Identifier.Button._6) {
+                    if (value == 1f) {
+                        Back_Share.setVisible(true);
+                    } else if (value == 0f) {
+                        Back_Share.setVisible(false);
+                    }
+                }
+                if (comp.getIdentifier() == Component.Identifier.Button._7) {
+                    if (value == 1f) {
+                        Start_Option.setVisible(true);
+                    } else if (value == 0f) {
+                        Start_Option.setVisible(false);
+                    }
                 }
                 gamepadstatus.setText(controller.getName());
                 generalPrinciple.apply();
