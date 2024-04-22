@@ -5,7 +5,7 @@
 # JoyStickTest on Java
 
 ## Description
-Project goal: port JoyStickTest from C++ to Java, using an interface on JavaFX
+Project goal: port JoyStickTest from C++ to Java, using an interface on JavaFX.
 Best adapted for windows, linux may have bugs
 
 ## Requirements
