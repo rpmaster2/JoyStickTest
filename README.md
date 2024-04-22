@@ -6,11 +6,12 @@
 
 ## Description
 Project goal: port JoyStickTest from C++ to Java, using an interface on JavaFX
+Best adapted for windows, linux may have bugs
 
 ## Requirements
 - JDK 17
 - Installed GTK libraries to work with OpenGL JavaFX (linux)
-- At least 512 MB of RAM
+- At least 256 MB of RAM
 
 ## Installation
 1. Download the file JE.jar from the Releases item
